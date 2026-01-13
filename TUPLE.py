@@ -9,4 +9,4 @@ if 0:
  my_2nd_tuple = ("hello",) # this is a tuple
  print("Type of my_2nd_tuple",type(my_2nd_tuple)) 
 
-#TUPLE - splicing same as list
+#TUPLE - splicing same as list_
