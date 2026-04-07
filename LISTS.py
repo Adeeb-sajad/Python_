@@ -1,4 +1,12 @@
-#LIST - ordered ,mutable ,allows duplicates,can store differnt types of data
+#LIST - ordered ,mutable ,allows duplicates, can store different types of data 
+#       (heteregenous data can be stored)
+# It is both a data type and a data structure 
+
+# Steps to make a list from human friendly data ->
+#  1. Convert ,2. seperate (data with commas) ,3.Surround (here with [])
+#  4. Assign
+
+# No need to mention it is a list ,the [] tells the PVM that it is a list 
   
 #SYNTAX
 if 0:
@@ -8,9 +16,25 @@ if 0:
 
 # FUNCTIONS 
   # print(), .append() , .insert() , .pop(), .remove(), .clear(), .reverse() , .sort()
-  # sorted(mylist), 
+  # sorted(mylist), isinstance(), split()
 
-#ways to copy lists in python (these things apply to all the shit) 
+# 1.append() - adding a single item to the end of the list 
+ 
+# 2.extend() - adds a collection of items to the end of the list 
+
+# 3. remove() and insert() - we can specify the location
+#                            of insertion and deletion from the list 
+
+# SYNTAX - remove(what to remove) , insert( where to insert , what to insert )
+
+# 4. isinstance() - return true if both the two arguments ka type match
+#                   eg : isinstance(mylist,list)
+#                        here if mylist is of list type then the isinstance() returns
+#                        true
+
+
+
+# Ways to copy lists in python (these things apply to all the shit) 
 # USING "="
 if 0:
  org_list = ["apple","orange","banana"]
@@ -23,7 +47,7 @@ if 0:
 if 0:
   org_list = ["apple","orange","banana"]
   copy_list = org_list.copy()      
-  copy_list.append("masla")    #this dpesnt have the above problem
+  copy_list.append("masla")    #this doesnt have the above problem
   print("This is the original list" , org_list)
   print("This is the copied list"  ,copy_list)
 

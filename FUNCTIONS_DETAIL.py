@@ -67,7 +67,8 @@ def fun():
 number = 0
 fun()
 print(f"The Global variable number {number}") #OUTPUT : 0
-
+ 
+# ------ 
 def fun():
   global number #this makes the local "number" variable the global "number" 
   number = 3
@@ -83,3 +84,56 @@ print(f"The Global variable number {number}") #OUTPUT : 3
 # function where the mutabble ones will
 
 
+# ->   CLASS EXAMPLES   <-
+ 
+#Example 1 :
+if 0:
+ x = 10
+ def demo():
+  x = x + 5    # Output - Unbounded local error - Assignment before definition 
+  x = 10
+  print(x)
+
+ demo() 
+
+#Note - example 1 - If a variable is assigned anywhere inside a fxn like above (x=x+5)
+#                   , python treats it as a local variable for that fxn 
+
+#Example 2 - About Non-local keyword 
+# nonlocal - dont create this variable ,look for it in the immediate outer scope 
+ADA = 5
+def OS():
+  ADA = 10
+  def CN():
+    nonlocal ADA
+    ADA = ADA + 5
+    print(ADA)
+    def DBMS():
+      global ADA
+      ADA = ADA + 20
+      print(ADA)
+    DBMS()
+  CN()    
+
+OS()
+print(ADA)
+
+# Function call sequence => OS() -> CN() -> DBMS()
+
+# OUTPUT: 15
+#         25
+#         25
+
+# Return statment is used to exit the function or 
+# send a value back to the calls
+
+#Example 3 -  By default function returns None which is of - <class 'NoneType'>
+def add(a,b):
+    print(a + b)
+
+x = add(10,20)
+print(x)    
+
+# OUTPUT: 30
+#         None
+         

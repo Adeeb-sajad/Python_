@@ -1,4 +1,7 @@
 # WHILE LOOP
+# while condition:
+#   statement 
+
 if 0 :
  i = 0
  while i<5:
@@ -42,6 +45,9 @@ else :
 
 # FOR LOOPS
 
+# for variable in sequence:
+#   statment
+
 mylist = [1,2,3,"meh"]
 
 for el in mylist :
@@ -58,7 +64,17 @@ for el in myset :
 else :
   print("End of set")  
 
-#range(start,stop,steps)
+# range(start,stop,steps)
+# purpose of range() is to generate a sequence
 for el in range(1,5):
   print(el)  
+
+# break -> to exit a loop immediately without 
+#          running any remaining code in the loop
+#          regardless of results of any conditional 
+#          test, it directs flow of the program 
+
+# continue -> the continue is statment is used to skip
+#             the rest of the current iteration and move
+#             to the next iteration of the loop
         

@@ -1,14 +1,10 @@
-def print_list(a,indx):
- if(indx>=0):
-   print(a[indx-1])
-   print_list(a,indx-1)
- else:
-   return  
-  
-a = [1,2,3,4,5]
-print_list(a,5) 
+mystr = input("Enter: ")
+mylist = mystr.split(" ")
+print(f" {mylist} - {type(mylist)} ")
+i = 0
+ch = ""
+while(i < len(mylist)):
+    ch = ch + mylist[i][0]
+    i = i + 1
 
-class student:
- @staticmethod
- def col_name():
-  print("abc colage")
+print(f"The desired output is {ch}")
