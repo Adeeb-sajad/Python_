@@ -21,7 +21,11 @@ with open(r"D:\CSE\python\files ka kessa\demo.txt","r") as f:
    data = f.readline()
    print(f"The line read by readline() is - {data}")
 
-   
+# .readlines() - every line becomes a part of the list
+#                (this list contains the whole file data)    
+with open(r"D:\CSE\python\files ka kessa\demo.txt","r") as f:
+   data = f.readlines()
+   print(f"The line read by readlines() is - {data}")
 
 # Here no readline nor read needed to print
 with open(r"D:\CSE\python\files ka kessa\demo.txt","r") as f:
@@ -45,3 +49,5 @@ with open(r"D:\CSE\python\files ka kessa\demo.txt","a") as f:
 with open(r"D:\CSE\python\files ka kessa\created_by_x.txt","x") as f:
    input_Str = input("""Enter what you wanna write using "x" in the file :""")   
    f.write(input_Str)
+
+   

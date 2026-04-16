@@ -1,6 +1,6 @@
 #SYNTAX TO CREATE
 if 0:
- mytuple = ("hello",69,"meh")
+ mytuple = ("hello",67,"meh")
  print(mytuple)
 
  # looks_like_tuple = ("Hello") THIS IS A STRING
@@ -10,3 +10,6 @@ if 0:
  print("Type of my_2nd_tuple",type(my_2nd_tuple)) 
 
 #TUPLE - splicing same as list_
+
+# VARIOUS METHODS
+# .index(), in, not in , 
