@@ -19,7 +19,7 @@ class Student :
     self.name = name           #object attribute - different for each object (denoted by .self)
 
 student1 = Student("adeeb")
-print(student1.name) #OUTPUT: adeeb
+print(student1.name) # OUTPUT: adeeb
 print(Student.collage_name) #OUTPUT: mehh collage 
 
 #EX 3 - Methods in classes
